@@ -1,0 +1,117 @@
+<html>
+    <head><title>Cafe</title></head>
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(background.jpg);
+}
+    .container {
+        width: 200vw;
+        height: 140vh;
+        
+        font-family: serif;
+        
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 100px 1fr 1fr 100px;
+        
+        grid-gap: 10px;
+        box-sizing: border-box;
+    }
+.topnav {
+  overflow: hidden;
+  background-color: #77a8a8;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddeedd;
+  color: black;
+}
+    .header {
+        float: left;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .header img {
+        width: inherit;
+        height: 100%;
+    }
+.content {
+  background-color: #e4d1d1;
+    padding: 20px;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+ grid-column-start: 1;
+  grid-column-end: 2;
+  
+} 
+    .content-small {
+        grid-row-start: 2;
+    grid-row-end: span 2;
+ grid-column-start: 2;
+  grid-column-end: span 3;
+    }
+    .content-small img {
+      width: 640;
+        height: 580;
+        float: inherit;
+    }
+.footer {
+  background-color: #77a8a8;
+  padding: 10px;
+  grid-column: 1 / span 3;
+}
+    .footer embed {
+        width: auto;
+        height: 100;
+        float: left;
+    }
+    .footer a {
+        float: right;
+    }
+</style>
+<body>
+<div class="topnav">
+    <a href="Orderandfeedback.html">Order And Feedback</a>
+      <a href="Menu.html">Menu</a>
+    <a selected href="Cafe.html">Location</a>
+     <a href="about.html">About</a>
+ <a href="index.html">Home</a>
+    </div>
+
+<div class="container">
+    <div class="header"><img src=logobiz.jpeg></div>
+    <div class="content">
+        <h1>Location of Biscookies Cafe</h1>
+        <a href="https://goo.gl/maps/zK5gNp7zWyjU2i7R6"><h2>Miri Time Square, Miri, Sarawak</h2></a>
+	<address>Lot No. A-B-119,<br>Block M<br>Times Square,<br>Miri Sarawak</address>
+        <a href="Cafe.html"><small>Check out Our Bakery</small></a>
+        <h3>This is how we produce our drinks!</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lVeNTofDB2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        <h4>Follow Us On Facebook!</h4>
+        <a href="https://www.facebook.com/profile.php?id=100089384265097&mibextid=ZbWKwL"><img src=FB%20Icon.png></a>
+    </div>
+    <div class="content-small"><img src="Cafe image.png"></div>
+    <div class="footer">
+        <p><small>Now Playing-Christmas Song</small></p>
+        <embed src=Xmas.mp3>
+    </div>
+    </div>
+</body>
+</html>

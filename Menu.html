@@ -1,0 +1,192 @@
+<html>
+    <head><title>Homepage</title></head>
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(background.jpg);
+}
+    .container {
+        width: 100vw;
+        height: 100vh;
+        
+        font-family: serif;
+        
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 100px 1fr 1fr 100px;
+        
+        grid-gap: 10px;
+        box-sizing: border-box;
+    }
+.topnav {
+  overflow: hidden;
+  background-color: #77a8a8;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddeedd;
+  color: black;
+}
+    .header {
+        float: left;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .header img {
+        width: inherit;
+        height: 100%;
+    }
+.content-left {
+  background-color: #e4d1d1;
+    padding: 20px;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+ grid-column-start: 1;
+  grid-column-end: 2;
+  
+} 
+
+    .content-center {
+  background-color: #e4d1d1;
+    padding: 20px;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+ grid-column-start: 2;
+  grid-column-end: 2;
+  
+} 
+
+    .content-right {
+  background-color: #e4d1d1;
+    padding: 20px;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+ grid-column-start: 3;
+  grid-column-end: 4;
+  
+} 
+  
+    
+.content p{
+          font-family: "Times New Roman", Times, serif;
+    }
+    .content h2 {
+  overflow: hidden; 
+  border-right: .15em solid orange; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s;
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+.footer {
+  background-color: #77a8a8;
+  padding: 10px;
+  grid-column: 1 / span 3;
+}
+    .footer embed {
+        width: auto;
+        height: 100;
+    }
+
+
+</style>
+<body>
+<div class="topnav">
+    <a href="Orderandfeedback.html">Order and Feedback</a>
+      <a selected href="Menu.html">Menu</a>
+    <a href="Location.html">Location</a>
+     <a href="about.html">About</a>
+      <a href="index.html">Home</a>
+    </div>
+
+<div class="container">
+    <div class="header"><img src=logobiz.jpeg></div>
+ 
+
+<div class="content-left">
+        <a href="Best sales.html">
+	<center><h1>COOKIES</h1></center>
+	</a>
+	<a href="COOKIES"></a>
+	<center><ul class="food-list"></center>
+		<ul>
+		<li>Chocolate Chip</li><br>
+		<li>Nutella</li><br>
+		<li>Red Velvet</li><br>
+		<li>M&M Cookies</li><br>
+		<li>Almond</li><br>
+		<li>Dark Chocolate</li><br>
+		</ul>
+		
+    </div>
+    <div class="content-center">
+	<a href="Best sales.html">
+        <center><h1>BISKUT</h1></center>
+	</a>
+	<a href="BISKUT"></a>
+	<center><ul class="food-list"></center>
+	<ul>
+	<li>Semperit susu</li><br>
+	<li>Almond London</li><br>
+	<li>Cornflakes Honey</li><br>
+	<li>Dahlia</li><br>
+	<li>Tart Nenas</li><br>
+	<li>Makmur</li><br>
+	<li>Cincin Strawberry</li><br>
+	<li>Batang Buruk</li>
+	</ul>
+    </div>
+
+     <div class="content-right">
+	<a href="Best sales.html">
+        <center><h1>DRINKS</h1></center>
+	</a>
+	<a href="DRINKS"></a>
+	<center><ul class="food-list"></center>
+	<ul>
+	<li>Hot Chocolate</li><br>
+	<li>Hot Mocha</li><br>
+	<li>Hot Cappuccino</li><br>
+	<li>Blooming Tea</li><br>
+	<li>Nutella Latte (Cold)</li><br>
+	<li>Biscoff (Cold)</li><br>
+	<li>Americano (Cold)</li><br>
+	<li>Matcha Latte (Cold)</li>
+	</ul>
+    </div>
+
+    <div class="footer">
+        <p><small>Now Playing-Suasana Hari Raya LoFi</small></p>
+        <embed src=Raya.mp3>
+    </div>
+    </div>
+</body>
+</html>

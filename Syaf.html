@@ -1,0 +1,120 @@
+<html>
+<head><title>Nadhrah</title></head>
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(bgimg.jpg);
+}
+    .container {
+        width: 100vw;
+        height: 100vh;
+        
+        font-family: serif;
+        
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 100px 1fr 1fr 100px;
+        
+        grid-gap: 10px;
+        box-sizing: border-box;
+    }
+
+
+    .header {
+        float: left;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .header img {
+        width: 300;
+        height: 100;
+    }
+.content {
+  background-color: #e4d1d1;
+    padding: 20px;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+ grid-column-start: 1;
+  grid-column-end: 3;
+  
+} 
+table, td, th {
+  border: 1px solid;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+    .content-small {
+        grid-row-start: 2;
+    grid-row-end: span 2;
+ grid-column-start: 3;
+  grid-column-end: 4;
+    }
+    .content-small img {
+      width: 315;
+        height: 380;
+        float: inherit;
+    }
+.footer {
+  background-color: #77a8a8;
+  padding: 10px;
+  grid-column: 1 / span 3;
+}
+    .footer embed {
+        width: auto;
+        height: 100;
+    }
+</style>
+   <body>
+<div class="container"> 
+    <div class=header><img src="logobiz.jpeg"></div>
+    <div class="content">
+<h2>Nur Syafiqah Abdul Malik</h2>    
+<table>
+  <tr>
+  <td>Name</td>
+  <td>Nur Syafiqah Abdul Malik</td>
+  </tr>
+  <tr>
+  <td>ID</td>
+  <td>2022764847</td>
+  </tr>
+  <tr>
+  <td>Date of Birth</td>
+  <td>30 October 2000</td>
+  </tr>
+  <tr>
+  <td>Hometown</td>
+  <td>Bintulu, Sarawak</td>
+    </tr>
+  <tr>
+  <td>Education Background</td>
+  <td><ul>
+      <li>Diploma in Business Studies
+      <li>Bachelor of Business Administration (hons.) Finance
+      </ul>
+      </td>
+  </tr>
+  <tr>
+  <td>Experience</td>
+  <td><ul> 
+      <li>Graphic Designer(current)
+        <li>Web Designer
+      </ul></td>
+  </tr>
+  </table>
+    </div>
+    <div class="content-small">
+        <a href="Syaf.jpeg"><img src=Syaf.jpeg></a>
+    </div>
+       </div>      
+    </body>
+</html>

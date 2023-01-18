@@ -1,0 +1,117 @@
+<html>
+    <head><title>About</title></head>
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(background.jpg);
+}
+    .container {
+        width: 100vw;
+        height: 100vh;
+        
+        font-family: serif;
+        
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 100px 1fr 1fr 100px;
+        
+        grid-gap: 10px;
+        box-sizing: border-box;
+    }
+.topnav {
+  overflow: hidden;
+  background-color: #77a8a8;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddeedd;
+  color: black;
+}
+    .header {
+        float: left;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .header img {
+        width: inherit;
+        height: 100%;
+    }
+.content {
+  background-color: #e4d1d1;
+    padding: 20px;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+ grid-column-start: 1;
+  grid-column-end: 3;
+  
+} 
+    .content h3{
+          font-family: "Times New Roman", Times, serif;
+          line-height: 1.6;
+    }
+    .content-small {
+        grid-row-start: 2;
+    grid-row-end: span 2;
+ grid-column-start: 3;
+  grid-column-end: 4;
+    }
+    .content-small img {
+      width: 270;
+        height: 580;
+        float: inherit;
+    }
+.footer {
+  background-color: #77a8a8;
+  padding: 10px;
+  grid-column: 1 / span 3;
+}
+    .footer embed {
+        width: auto;
+        height: 100;
+        float: left;
+    }
+    .footer a {
+        float: right;
+    }
+</style>
+<body>
+<div class="topnav">
+     <a href="Orderandfeedback.html">Order And Feedback</a>
+      <a href="Menu.html">Menu</a>
+    <a href="Location.html">Location</a>
+     <a selected href="about.html">About</a>
+ <a href="index.html">Home</a>
+    </div>
+
+<div class="container">
+    <div class="header"><img src=logobiz.jpeg></div>
+    <div class="content">
+        <h1>About Us</h1>
+        <h2>Background of The Business</h2>
+        <h3> Biscookies was formely a small business owned by a few students graduated from UiTM. The purpose of this business is to spread the happiness that people feel during festive season such as Hari Raya, Christmas, Deepavali and many more! From there, Biscookies grew a lot and able to have their own bakery and cafe to serve their customer.</h3>
+        
+    </div>
+    <div class="content-small"><img src=poster.png></div>
+    <div class="footer">
+        <p><small>Now Playing-CNY</small></p>
+        <embed src=CN%E2%80%93_Chinese_New_Year_128_kbps.mp3>
+        <a href="about2.html">Next Page</a>
+    </div>
+    </div>
+</body>
+</html>

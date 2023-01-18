@@ -1,0 +1,211 @@
+<html>
+    <head><title>Cakes</title></head>
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(background.jpg);
+}
+    .container {
+        width: 100vw;
+        height: 220vh;
+        
+        font-family: serif;
+        
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 100px 1fr 1fr 100px;
+        
+        grid-gap: 10px;
+        box-sizing: border-box;
+    }
+.topnav {
+  overflow: hidden;
+  background-color: #77a8a8;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddeedd;
+  color: black;
+}
+    .header {
+        float: left;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .header img {
+        width: inherit;
+        height: 100%;
+    }
+.content {
+  background-color: #e4d1d1;
+    padding: 20px;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+ grid-column-start: 1;
+  grid-column-end: 3;
+  
+} 
+.content{
+
+}
+
+table,td,th{
+ border:1px solid;
+}
+
+table{
+ width;100%;
+ border-collapse;collapse;
+}
+
+    .content-small {
+        grid-row-start: 2;
+    grid-row-end: span 2;
+ grid-column-start: 3;
+  grid-column-end: 4;
+    }
+    .content-small img {
+      width: 270;
+        height: 580;
+        float: inherit;
+    }
+.footer {
+  background-color: #77a8a8;
+  padding: 10px;
+  grid-column: 1 / span 3;
+}
+    .footer embed {
+        width: auto;
+        height: 100;
+        float: left;
+    }
+    .footer a {
+        float: right;
+    }
+</style>
+<body>
+<div class="topnav">
+        <a href="Orderandfeedback.html">Order And Feedback</a>
+      <a href="Menu.html">Menu</a>
+    <a href="Location.html">Location</a>
+     <a selected href="about.html">About</a>
+ <a href="index.html">Home</a>
+    </div>
+
+<div class="container">
+    <div class="header"><img src=logobiz.jpeg></div>
+    <div class="content">
+        <h1>CAKES</h1>
+        <h2>A THEMED CAKES FOR EVERY OCASSION</h2>
+	  <p> Baking a cake is a common way to bring out the sweetness in a dish. Cakes have evolved from their original bread-based ancestry into a broad category of sweet treats. Flour, sugar, eggs, butter or oil, a liquid, and leavening agents are the standard cake components. Many variations are possible by changing the base components and adding or subtracting things like fruit (dried, candied, or fresh), nuts, chocolate, and extracts (vanilla, almond, etc.). Cakes may also be frosted with butter cream or another frosting, filled with fruit preserves or dessert sauces (such pastry cream), and embellished with marzipan, piped borders, or candied fruit. Cake is a common celebration food for events like birthday parties, anniversaries, and weddings.</p>
+<center>
+<table>
+<tr>
+    <td><b>Occasion</b></td>
+    <td><b>Cakes</b></td>
+    <td><b>Description</b></td>
+</tr>
+
+<tr>
+<td>Chinese New Year</td>
+<td><img src="Chinese new year cake.jpg" width=200 height=250></td>
+<td>Available in a range of flavours:
+<ul>
+<li>Chocolate
+<li>Red Velvet
+<li>Strawberry
+<li>Blueberry
+<li>Raspberry
+<li>Pandan
+<li>Yam
+<li>Vanilla
+<li>Coconut
+<li>Cheese
+</ul>
+</td>
+</tr>
+
+<tr>
+<td>Eid Mubarak</td>
+<td><img src="Eid Mubarak cake (2).jpg" width=200 height=250></td>
+<td>Available in a range of flavours:
+<ul>
+<li>Chocolate
+<li>Red Velvet
+<li>Strawberry
+<li>Blueberry
+<li>Raspberry
+<li>Pandan
+<li>Yam
+<li>Vanilla
+<li>Coconut
+<li>Cheese
+</ul>
+</td>
+</tr>
+
+<tr>
+<td>Deepavali</td>
+<td><img src="Deepavali cake.jpg" width=200 height=250></td>
+<td>Available in a range of flavours:
+<ul>
+<li>Chocolate
+<li>Red Velvet
+<li>Strawberry
+<li>Blueberry
+<li>Raspberry
+<li>Pandan
+<li>Yam
+<li>Vanilla
+<li>Coconut
+<li>Cheese
+</ul>
+</td>
+</tr>
+
+<tr>
+<td>Christmas Day</td>
+<td><img src="Christmas%20cake%202.jpg" width=200 height=250></td>
+<td>Available in a range of flavours:
+<ul>
+<li>Chocolate
+<li>Red Velvet
+<li>Strawberry
+<li>Blueberry
+<li>Raspberry
+<li>Pandan
+<li>Yam
+<li>Vanilla
+<li>Coconut
+<li>Cheese
+</ul>
+</td>
+</tr>
+</table>
+</center>
+
+      
+    </div>
+    <div class="content-small"><img src=poster.png></div>
+    <div class="footer">
+        <p><small>Now Playing-Xmas</small></p>
+        <embed src=Xmas.mp3>
+    </div>
+    </div>
+</body>
+</html>

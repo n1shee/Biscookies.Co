@@ -1,0 +1,151 @@
+<html>
+    <head><title>About</title></head>
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(background.jpg);
+}
+    .container {
+        width: 100vw;
+        height: 100vh;
+        
+        font-family: serif;
+        
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr 1fr 1fr 100px;
+        
+        grid-gap: 40px;
+        box-sizing: border-box;
+    }
+.topnav {
+  overflow: hidden;
+  background-color: #77a8a8;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddeedd;
+  color: black;
+}
+    .header {
+        float: left;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .header img {
+        width: inherit;
+        height: 100%;
+    }
+div.gallery {
+  margin: 10px;
+  border: auto #77a8a8;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  background-color: #b9b0b0;
+}
+    div.iframe {
+        width: auto;
+        border: auto #77a8a8;
+          grid-row-start: 3;
+    grid-row-end: 3;
+ grid-column-start: 1;
+  grid-column-end: 4;
+    }
+.footer {
+  background-color: #77a8a8;
+  padding: 10px;
+  grid-column: 1 / span 3;
+}
+    .footer embed {
+        width: auto;
+        height: 100;
+    }
+</style>
+<body>
+<div class="topnav">
+    <a href="Orderandfeedback.html">Order And Feedback</a>
+      <a href="Menu.html">Menu</a>
+    <a href="Location.html">Location</a>
+     <a selected href="about.html">About</a>
+ <a href="index.html">Home</a>
+    </div>
+
+<div class="container">
+ <div class="gallery">
+  <a target="display-frame" href="Nissa.html">
+    <img src="Nissa.jpeg" width="600" height="400">
+  </a>
+  <div class="desc">Project Manager</div>
+</div>
+
+<div class="gallery">
+  <a target="display-frame" href="Nadhrah.html">
+    <img src="Nad.jpeg" width="600" height=auto>
+  </a>
+  <div class="desc">Multimedia Designer</div>
+    </div>
+<div class="gallery">
+  <a target="display-frame" href="Khai.html">
+    <img src="Khai.jpeg"  width="600" height="400">
+  </a>
+  <div class="desc">Audio Specialist</div>
+</div>
+
+<div class="gallery">
+  <a target="display-frame" href="Syaf.html">
+    <img src="Syaf.jpeg" width="600" height="400">
+  </a>
+  <div class="desc">Grapic Designer</div>
+</div>
+    <div class="gallery">
+  <a target="display-frame" href="Asfa.html">
+    <img src="Asfa.jpeg" width="600" height="400">
+  </a>
+  <div class="desc">Video Specialist</div>
+</div>
+    <div class="gallery">
+  <a target="display-frame" href="Esther.html">
+    <img src="Esther.jpeg" width="600" height="400">
+  </a>
+  <div class="desc">Writer</div>
+</div>
+   <div class="iframe">
+    <iframe name="display-frame"
+        style="width:100%;height:600px;border:2px solid #4e46e5;"></iframe>
+    </div>
+    <div class="footer">
+        <p><small>Now Playing-CNY</small></p>
+        <embed src=Deepavali.mp3>
+    </div>
+    </div>
+</body>
+</html>

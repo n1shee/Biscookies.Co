@@ -1,0 +1,151 @@
+<html>
+    <head><title>About</title></head>
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(background.jpg);
+}
+    .container {
+        width: 100vw;
+        height: 100vh;
+        
+        font-family: serif;
+        
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 100px 1fr 1fr 100px;
+        
+        grid-gap: 10px;
+        box-sizing: border-box;
+    }
+.topnav {
+  overflow: hidden;
+  background-color: #77a8a8;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddeedd;
+  color: black;
+}
+    .header {
+        float: left;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .header img {
+        width: inherit;
+        height: 100%;
+    }
+.content {
+  background-color: #e4d1d1;
+    padding: 20px;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+ grid-column-start: 1;
+  grid-column-end: 3;
+  
+} 
+    .content p{
+          font-family: "Times New Roman", Times, serif;
+    }
+    
+    select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+    
+    .content-small {
+        grid-row-start: 2;
+    grid-row-end: span 2;
+ grid-column-start: 3;
+  grid-column-end: 4;
+    }
+    .content-small img {
+      width: 270;
+        height: 580;
+        float: inherit;
+    }
+.footer {
+  background-color: #77a8a8;
+  padding: 10px;
+  grid-column: 1 / span 3;
+}
+    .footer embed {
+        width: auto;
+        height: 100;
+        float: left;
+    }
+    .footer a {
+        float: right;
+    }
+</style>
+<body>
+<div class="topnav">
+    <a selected href="Orderandfeedback.html">Order And Feedback</a>
+      <a href="Menu.html">Menu</a>
+    <a href="Location.html">Location</a>
+     <a href="about.html">About</a>
+ <a href="index.html">Home</a>
+    </div>
+
+<div class="container">
+    <div class="header"><img src=logobiz.jpeg></div>
+    <div class="content">
+        <h1>Orders and Feedback</h1>
+<form>
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="fname" value="First Name">
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lname" value="Last Name"><br><br>
+    </form>
+
+ State:<select name=list>
+        <option value=Sarawak>Sarawak</option>
+        <option value=Sabah>Sabah</option>
+        <option value="Semenanjung Malaysia">Semenanjung Malaysia</option>
+</select><br><br>
+    Order:<select name=list>
+        <option value="Kek Lapis">Kek Lapis</option>
+        <option value="Birthday Cake">Birthday Cake</option>
+        <option value="Festivals Cake">Festival Cake</option>
+        <option value="Cookies">Cookies</option>
+        <option value="Hot Drinks">Hot Drinks</option>
+        <option value="Cold Drinks">Cold Drinks</option>
+        <option value="Biskut Raya">Biskut Raya</option>
+</select><br><br>
+    Order Quantity:<input type=radio name=quantity value=1>1
+<input type=radio name=quantity value=2>2
+<input type=radio name=quantity value=3>3
+<input type=radio name=quantity value=4>4
+<input type=radio name=quantity value=5>5<br><br>
+
+<p>Leave us a feedback!
+<p><textarea name=comment rows=5 cols=100>Feedback</textarea><br><br>
+<input type=Submit value=Buy>
+    </div>
+    <div class="content-small"><img src=poster.png></div>
+    <div class="footer">
+        <p><small>Now Playing-Hari Raya</small></p>
+        <embed src=Raya.mp3>
+    </div>
+    </div>
+</body>
+</html>
